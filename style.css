@@ -108,6 +108,16 @@ body {
     letter-spacing: -0.01em;
 }
 
+#searchTourBtn:hover {
+    background: #EFA501;
+    color: #FFFFFF;
+}
+
+#searchTourBtn:active {
+    background: #F8E6BE;
+    color: #1B1F2B;
+}
+
 #secondWordsCont2 {
     font-family: 'Roboto';
     font-style: normal;

@@ -14,6 +14,8 @@ body {
     display: flex;
     flex-direction: column;
 
+    gap: 135px;
+
     height: 100%;
 }
 
@@ -47,12 +49,13 @@ body {
 
 .container2Inside {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     align-self: center;
     
-    gap:5px ;
+    gap:50px;
 
     height: fit-content;
 
@@ -84,7 +87,7 @@ body {
 .item {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
     line-height: 142%;
 
@@ -121,22 +124,99 @@ body {
 #secondWordsCont2 {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 100;
     font-size: 20px;
     line-height: 142%;
     text-align: center;
     color: #FFFFFF;
+
+    width: 562px;
 }
 
 
+.cardsBlock {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 100px;
+
+    width: calc(100% - 1px);
+    height: 1334px;;
+}
+
+.cardsTopInfo {
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    gap: 35PX;
+    align-items: center;
+
+    width: 700px;
+}
+
+.cardsTopInfoItems {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.CardTopInfoItem {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 122%;
+}
+
+.cardsMain {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+.cardsColumn {
+    display: flex;
+    flex-direction: row;
+
+    gap: 30px;
+
+    width: fit-content;
+    height: fit-content;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+
+    width: 370px;
+    height: 531px;
 
 
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
 
+    border: 1px solid green;
 
+}
 
+.cardsImg {
+    border-radius: 50px;
+    position: relative;
 
-
-
+    background-color: linear-gradient(to bottom, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .5) 59%, rgba(0, 0, 0, 0.5) 100%), url('http://lorempixel.com/400/400/') no-repeat;
+}
 
  /* .mainFrame {  
     background-image: url(background.png);

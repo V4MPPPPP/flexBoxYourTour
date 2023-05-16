@@ -1,66 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-         <!-- <div class="mainFrame"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="Main">
+        <div class="headerMenu">
             <div class="container1">
-                <div class="containerBack"></div>
-                    <img src="YourTour.svg" style="flex-grow: 0;
-                    border: 1px solid yellow;
-                    "/>
-                    <div class="box box2">
-                        <a class="insideBox">Туры</a>
-                        <a class="insideBox">Создать тур</a>
-                        <a class="insideBox">Отзывы</a>
-                        <a class="insideBox">Истории</a>
-                    </div>  
-                    <a class="insideBox">+7 999 999 99 99</a>
+                <div class="containerItems">
+                    <img src="YourTour.svg" style=""/>
+                    <div class="menuItems">
+                        <a class="item">Туры</a>
+                        <a class="item">Создать тур</a>
+                        <a class="item">Отзывы</a>
+                        <a class="item">Истории</a>
+                    </div>
+                    <a class="item phoneNumber">+7 999 999 99 99</a>
                 </div>
-            </div>  
+            </div>
             <div class="container2">
-                123
-            </div>  
-        </div>-->
-        
-        <div class="Blocks"> 
-            <div class="headerMenu">
-                <div class="container1">
-                    <div class="containerItems">
-                        <img src="YourTour.svg" style=""/>
-                        <div class="menuItems">
-                            <a class="item">Туры</a>
-                            <a class="item">Создать тур</a>
-                            <a class="item">Отзывы</a>
-                            <a class="item">Истории</a>
+                <div class="container2Inside">
+                    <a style=" font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 96px;
+                    color: white;
+                    line-height: 109%;
+                    text-align: center;
+                    ">Идеальные путешествия существуют</a>
+                    <a id="secondWordsCont2">Идейные соображения высшего порядка, а также рамки и место обучения кадров</a>
+                    <input id="searchTourBtn" type="button" value="Найти тур">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="chooseYourTour">
+            <div class="firstBlock">
+                <h2 id="chooseYourTourH2">Выбери свой тур</h2>
+                <div class="chooseYourTourItems">
+                    <p class="chooseItems">Популярные</p>
+                    <p class="chooseItems">Авторские</p>
+                    <p class="chooseItems">Походы</p>
+                    <p class="chooseItems">Сплавы</p>
+                    <p class="chooseItems">Велопрогулки</p>
+                </div>
+            </div>
+            <div class="secondBlock">
+                <div class="TripleBox">
+                    <div class="cards" id="card1">
+                        <div class="cardTopText">
+                            <h3 class="travelH3">Путешествие в горы</h3>
+                            <p class="travelP">от 80 000 руб</p>
                         </div>
-                        <a class="item phoneNumber">+7 999 999 99 99</a>
+                        <div class="cardBottomText">
+                            <p class="cardMore">Подробнее</p>
+                            <img src="Vector.svg" class="cardVector">
+                        </div>
+                    </div>
+                    <div class="cards" id="card2">
+                        <div class="cardTopText">
+                            <h3 class="travelH3">Путешествие в горы</h3>
+                            <p class="travelP">от 80 000 руб</p>
+                        </div>
+                        <div class="cardBottomText">
+                            <p class="cardMore">Подробнее</p>
+                            <img src="Vector.svg" class="cardVector">
+                        </div>
+                    </div>
+                    <div class="cards" id="card3">
+                        <div class="cardTopText">
+                            <h3 class="travelH3">Путешествие в горы</h3>
+                            <p class="travelP">от 80 000 руб</p>
+                        </div>
+                        <div class="cardBottomText">
+                            <p class="cardMore">Подробнее</p>
+                            <img src="Vector.svg" class="cardVector">
+                        </div>
                     </div>
                 </div>
-                <div class="container2">
-                    <div class="container2Inside">
-                        <a style=" font-family: 'Roboto';
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 96px;
-                        color: white;
-                        line-height: 109%;
-                        text-align: center;
-                        ">Идеальные путешествия существуют</a>
-                        <a id="secondWordsCont2">Идейные соображения высшего порядка, а также рамки и место обучения кадров</a>
-                        <input id="searchTourBtn" type="button" value="Найти тур">
+                <div class="TripleBox">
+                    <div class="cards" id="card4">
+                        <div class="cardTopText">
+                            <h3 class="travelH3">Путешествие в горы</h3>
+                            <p class="travelP">от 80 000 руб</p>
+                        </div>
+                        <div class="cardBottomText">
+                            <p class="cardMore">Подробнее</p>
+                            <img src="Vector.svg" class="cardVector">
+                        </div>
+                    </div>
+                    <div class="cards" id="card5">
+                        <div class="cardTopText">
+                            <h3 class="travelH3">Путешествие в горы</h3>
+                            <p class="travelP">от 80 000 руб</p>
+                        </div>
+                        <div class="cardBottomText">
+                            <p class="cardMore">Подробнее</p>
+                            <img src="Vector.svg" class="cardVector">
+                        </div>
+                    </div>
+                    <div class="cards" id="card6">
+                        <div class="cardTopText">
+                            <h3 class="travelH3">Путешествие в горы</h3>
+                            <p class="travelP">от 80 000 руб</p>
+                        </div>
+                        <div class="cardBottomText">
+                            <p class="cardMore">Подробнее</p>
+                            <img src="Vector.svg" class="cardVector">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-    </body>
-</html> 
+
+
+
+
+
+        <div style="display: flex; justify-content: center; flex-direction: column;">
+            <div class="container" style="flex-direction: column; justify-content: center; align-self: center;">
+                <div class="collectTour" >Собери свой тур</div>
+                <div class="collectTourBottom" >Идейные соображения высшего порядка, а также рамки и место обучения кадров</div>
+            </div>
+            <div class="formsCollectTour">
+                <div class="inputField" >
+                    <div class="column"> 
+                        <div class="signInput">Имя</div>
+                        <input class="input input_text" type="text" placeholder="Введите Ваше имя">
+                    </div>
+                    <div class="column">
+                        <div class="signInput">Направление</div>
+                        <select class="input input_text" placeholder="Куда хотите ехать">
+    
+                        </select>
+                    </div>
+                </div>
+                <div class="inputField" >
+                    <div class="column"> 
+                        <div class="signInput">Email</div>
+                        <input class="input input_text" type="text" placeholder="example@mail.com">
+                    </div>
+                    <div class="column">
+                        <div class="signInput">Телефон</div>
+                        <input class="input input_text" type="text" placeholder="Куда хотите ехать">
+                    </div>
+                </div>
+                <div class="inputField" >
+                    <div class="column"> 
+                        <div class="signInput">Дата от</div>
+                        <input class="input input_text" type="text" placeholder="Введите Ваше имя">
+                    </div>
+                    <div class="column">
+                        <div class="signInput">Дата до</div>
+                        <input class="input input_text" type="text" placeholder="Куда хотите ехать">
+                    </div>
+                </div>
+                <div>
+                    <div class="column">
+                        <div class="signInput">Комментарий</div>
+                        <textarea class="input input_text комментарий"></textarea>
+                    </div>
+                </div>
+                <div class="ifAdultContainer">
+                    <div class="signInput">Вам есть 18 лет?</div>
+                    <div class="ifAdultCheck">
+                       <div class="RadioComplex">
+                            <input id="ifYes" class="input RadioBtn" type="radio" name="ageCheck" >
+                            <label class="RadioBtnTxt" for="Yes">Да</label>
+                       </div>
+                       <div class="radioComplex">
+                            <input  id="ifNo" class="input RadioBtn" type="radio" name="ageCheck" >
+                            <label class="RadioBtnTxt" for="No">Нет</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        
+        <div id="reviewTravelers">
+            <div class="reviewTop">
+                <h2 id="reviewH2">Отзывы наших путешественников</h2>
+                <p id="reviewP">Идейные соображение высшего порядка, а также рамки и место обучения кадров</p>
+            </div>
+            <div class="reviewBottom">
+                <div class="firstCardBottomReview">
+                    <p class="cardBottomReviewText">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение модели развития.</p> 
+                    <div style="
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width: 490px;
+                        height: 75px;
+                    ">
+                        <div class="reviewAuthorCard">
+                            <h3 style="
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 35px;
+                            line-height: 122%;
+                            color: #1B1F2B;
+                            ">Мария</h3>
+                            <p style="
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 17px;
+                            line-height: 142%;
+                            letter-spacing: -0.01em;
+                            color: #A6A6A6;
+                            margin-top: 9px;
+                            ">Тур: Вдали от дома</p>
+                        </div>
+                        <img style="background-image: url(autho1.png);
+                        border-radius: 100px;
+                        width: 75px;
+                        height: 75px;
+                        margin-left: 100px;
+                        ">
+                    </div>
+                </div>
+                <div class="firstCardBottomReview">
+                    <p class="cardBottomReviewText">Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.<br><br> Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.</p> 
+                    <div style="
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width: 490px;
+                        height: 75px;
+                    ">
+                        <div class="reviewAuthorCard">
+                            <h3 style="
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 35px;
+                            line-height: 122%;
+                            color: #1B1F2B;
+                            ">Павел</h3>
+                            <p style="
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 17px;
+                            line-height: 142%;
+                            letter-spacing: -0.01em;
+                            color: #A6A6A6;
+                            margin-top: 9px;
+                            ">Тур: Путешествие в горы</p>
+                        </div>
+                        <img style="background-image: url(author2.png);
+                        border-radius: 100px;
+                        width: 75px;
+                        height: 75px;
+                        margin-left: 100px;
+                        ">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="travelPhotos">
+            <div id="travelPhotoText">
+                <h2 id="photosH2">Фотографии путешествий</h2>
+                <p id="photosP">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+            </div>
+            <div id="travelPhotosTriple">
+                <div id="firstTravelPhotos">
+                    <img class="bigIMG" style="background: url(img1.jpg); background-size: cover;">
+                    <img class="bigIMG" style="background: url(img2.jpg); background-size: cover;">
+                    <img class="bigIMG" style="background: url(img3.jpg); background-size: cover;">
+                    <img class="bigIMG" style="background: url(img4.jpg); background-size: cover;">
+                </div>
+                <div id="secondTravelPhotos">
+                    <img class="smallIMG" style="background: url(img5.jpg); background-size: cover;">
+                    <img class="smallIMG" style="background: url(img6.jpg); background-size: cover;">
+                    <img class="smallIMG" style="background: url(img7.jpg); background-size: cover;">
+                    <img class="smallIMG" style="background: url(img8.png); background-size: cover;">
+                    <img class="smallIMG" style="background: url(img13.jpg); background-size: cover;">
+                </div>
+                <div id="thirdTravelPhotos">
+                    <img class="bigIMG" style="background: url(img9.jpg); background-size: cover;">
+                    <img class="bigIMG" style="background: url(img10.jpg); background-size: cover;">
+                    <img class="bigIMG" style="background: url(img11.jpg); background-size: cover;">
+                    <img class="bigIMG" style="background: url(img12.jpg); background-size: cover;">
+                </div>
+            </div>
+        </div>
+        <div id="travelStorys">
+            <div id="storyTitle">
+                <h2 id="storyH2">Истории путешествий</h2>
+                <p id="storyP">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+            </div>
+        </div>
+        <div style="
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 30px;
+
+        width: 771px;
+        height: 370px;
+        ">
+            <img style="
+                width: 370px;
+                height: 370px;
+
+                background: url(lastovaayaaa.png);
+                border-radius: 50px;
+                ">
+            <div style="
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 20px;
+
+                width: 371px;
+                height: 162px;
+            ">
+                <h3 style="
+                width: 371px;
+                height: 86px;
+
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 35px;
+                line-height: 122%;
+                color: #1B1F2B;
+                ">Пора в путешествие вместе с нами!</h3>
+                <p style="
+                width: 364px;
+                height: 56px;
+
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 142%;
+                color: #A6A6A6;
+                ">Напиши на почту и узнай подробности на <a style="color:black;">yourtour@gmail.com</a></p>
+            </div>
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

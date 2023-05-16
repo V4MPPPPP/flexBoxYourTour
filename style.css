@@ -1,21 +1,22 @@
+* {
+    margin: 0px;
+}
 
 body {
-    margin: 0px;
-    padding: 0px;
-    /*background-izmage: url(background.png);
-    background-repeat: no-repeat;
-    background-size: cover;*/
-
+    background-color: #F9F7F4;
+    margin: 0;
+    /*max-width: 1920px;*/
     width: 100%;
-    height: 9101px;
+    display: block;
 }
 
-.Blocks {
-    display: flex;
-    flex-direction: column;
-
-    height: 100%;
-}
+/**********************************************************************************************************************************************************************
+********************************************************************************************************************************************************
+********************************************************************************************************************************************************
+********************************************************************************************************************************************************
+********************************************************************************************************************************************************
+********************************************************************************************************************************************************
+*/
 
 .headerMenu {
     display: flex;
@@ -43,6 +44,7 @@ body {
     justify-content: center;
 
     height: 743px;
+
 }
 
 .container2Inside {
@@ -52,7 +54,7 @@ body {
     flex-direction: column;
     align-self: center;
     
-    gap:5px ;
+    gap:50px;
 
     height: fit-content;
 
@@ -126,87 +128,663 @@ body {
     line-height: 142%;
     text-align: center;
     color: #FFFFFF;
+
+    width: 562px;
 }
 
+/**********************************************************************************************************************************************************************
+********************************************************************************************************************************************************
+********************************************************************************************************************************************************
+********************************************************************************************************************************************************
+********************************************************************************************************************************************************
+********************************************************************************************************************************************************
+*/
 
 
 
 
+#Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 135px;
+}
 
+#chooseYourTourH2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 59px;
+    line-height: 124%;
+}
 
+.chooseYourTour {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 100px;
+    display: flex;
+}
 
+.firstBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 35px;
+    
+    width: 700px;
+    height: 142px;
+}
 
+.chooseYourTourItems {
+    display: flex;
+    flex-direction:row;
+    align-items:flex-start;
+    justify-content: space-between;
+    padding: 0px;
+    gap: 30px;
 
+    width: 700px;
+    height: 34px;
+}
 
- /* .mainFrame {  
-    background-image: url(background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
+.chooseItems {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 122%;
+    color: #1B1F2B;
+}
 
+.secondBlock {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-
-    width: 100%;
-    max-height: 831px;
-}
-
-.containerBack {
-    background-image: url(background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-}
-
-.container1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    margin: 0px;
-    border: 1px solid green;
-
-    width: 100%;
-    height: 88px;
-}
-
-.containerItems {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-    border: 1px solid red;
-    gap: 1px;
-    padding: 0px;
+    gap: 30px;
 
     width: 1170px;
+    height: 1092px;
 }
 
-.box {
+.TripleBox {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 0px;
-    gap: 50px;
+    gap: 30px;
 
-    border: 1px solid black;
+    width: 1170px;
+    height: 531px;
 }
 
+.cards {
+    width: 370px;
+    height: 531px;
 
-.insideBox {
-    border: 1px solid black;
-    align-items: center;
+    position: relative;
+
+    border-radius: 50px;
+}
+
+#card1 {
+    background-image: url("card1.jpg");
+    background-size: 100%;
+}
+
+.cardTopText {
+    position: absolute;
+    left: 50px;
+    right: 50px;
+    top: 50px;
+}
+
+.travelH3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 122%;
+
+    width: 200px;
+    height: 86px;
+
+    color: #FFFFFF;
+}
+
+.travelP {
+    margin-top: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 142%;
+    /* or 24px */
+
+    letter-spacing: -0.01em;
+
+    color: #FFFFFF;
+}
+
+.cardBottomText {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+
+    left: 50px;
+    right: 200px;
+    top: 453px;
+    bottom: 50px;
+}
+
+.cardMore {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 122%;
+
+    color: #FFFFFF;
+}
+
+.cardVector {
+    width: 24px;
+    height: 26px;
+
+    margin-left: 15px;
+}
+
+#card2 {
+    background-image: url("card2.jpg");
+    background-size: 100%;
+}
+
+#card3 {
+    background-image: url("card3.jpg");
+    background-size: 100%;
+}
+
+#card4 {
+    background-image: url("card4.jpg");
+    background-size: 100%;
+}
+
+#card5 {
+    background-image: url("card5.jpg");
+    background-size: 100%;
+}
+
+#card6 {
+    background-image: url("card6.jpg");
+    background-size: 100%;
+}
+
+/**********************************************************************************************************************************************************************
+********************************************************************************************************************************************************
+********************************************************************************************************************************************************
+********************************************************************************************************************************************************
+********************************************************************************************************************************************************
+********************************************************************************************************************************************************
+*/
+
+
+.collectTour {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 59px;
+    line-height: 124%;
+    /* or 73px */
+    
+    text-align: center;
+    
+    /* Black */
+    
+    color: #1B1F2B;
+    max-width: 458px;
+    align-self: center;
+}
+
+.collectTourBottom {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 142%;
-    color: white;
+    /* or 28px */
+    
+    text-align: center;
+    
+    /* Gray 300 */
+    
+    color: #A6A6A6;
+    max-width: 418px;
+    margin-top: 30px;
+    align-self: center;
 }
 
- */
+.formsCollectTour {
+    margin-top: 100px; 
+    max-width: 1170px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 70px;
+    gap: 33px;
+
+    background: #FFFFFF;
+    border-radius: 50px;
+    align-self: center;
+}
+
+.signInput {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    /* or 28px */
+
+
+    /* Black */
+
+    color: #1B1F2B;
+    }
+
+.inputField {
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+
+.input {
+    width: 500px;
+    height: 68px;
+
+    padding: 20px;
+    margin-top: 8px;
+    background: #F9F7F4;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.input_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    /* or 28px */
+
+
+    /* Gray 300 */
+
+    color: #A6A6A6;
+}
+
+.комментарий {
+    resize: none;
+    padding: 20px;
+    gap: 10px;
+
+    width: 1030px;
+    height: 152px;
+    }
+
+    .column {
+    display:flex; 
+    flex-direction: column;
+}
+
+.ifAdultContainer {
+    display: flex; 
+    justify-content: flex-start;
+    flex-direction: column;  
+}
+
+.ifAdultCheck {
+    margin-top: 9px;
+    display: flex; 
+    flex-direction: row; 
+    gap: 31px; 
+    align-content:flex-start;
+}
+
+.RadioBtn {
+    width: 26px;
+    height: 26px;
+    margin: 0px;
+    vertical-align: middle;
+}
+
+.RadioBtnTxt {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    color: #1B1F2B;
+    align-self: center;
+}
+
+.RadioComplex {
+    display: flex; 
+    flex-direction: row; 
+    gap: 11px
+}
+
+
+/**********************************************************************************************************************************************************************
+********************************************************************************************************************************************************
+********************************************************************************************************************************************************
+********************************************************************************************************************************************************
+********************************************************************************************************************************************************
+********************************************************************************************************************************************************
+*/
+
+#reviewTravelers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 100px;
+    width: 1170px;
+    height: 1005px;
+
+}
+
+.reviewTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+
+    width: 529px;
+    height: 232px;
+}
+
+#reviewH2 {
+    width: 529px;
+    height: 146px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 59px;
+    line-height: 124%;
+    text-align: center;
+    color: #1B1F2B;
+}
+
+#reviewP {
+    width: 418px;
+    height: 56px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    text-align: center;
+    color: #A6A6A6;
+}
+
+.reviewBottom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+
+    width: 1170px;
+    height: 673px;
+}
+
+.firstCardBottomReview {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+
+    width: 490px;
+    height: 590px;
+
+    background: #F4F0E9;
+    border-radius: 50px;
+}
+
+.cardBottomReviewText {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 122%;
+    color: #1B1F2B;
+
+    width: 490px;
+    height: 252px;
+}
+
+/**********************************************************************************************************************************************************************
+********************************************************************************************************************************************************
+********************************************************************************************************************************************************
+********************************************************************************************************************************************************
+********************************************************************************************************************************************************
+********************************************************************************************************************************************************
+*/
+
+
+.travelPhotos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 100px;
+
+    width: 1920px;
+    height: 1222px;
+}
+
+#photosH2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 59px;
+    line-height: 124%;
+    text-align: center;
+    color: #1B1F2B;
+}
+
+#photosP {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    text-align: center;
+    color: #A6A6A6;
+
+    width: 418px;
+    height: 56px;
+}
+
+#travelPhotoText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+
+    width: 723px;
+    height: 159px;
+}
+
+.bigIMG {
+    width: 442.5px;
+    height: 300px;
+    
+    background: url(image.png);
+    border-radius: 50px;
+}
+
+.smallIMG {
+    width: 347.32px;
+    height: 301px;
+
+    background: url(.jpg);
+    border-radius: 50px;
+}
+
+#firstTravelPhotos {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+
+    width: 1860px;
+    height: 301px;
+}
+
+#secondTravelPhotos {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    
+    width: 1860px;
+    height: 301px;
+}
+
+#thirdTravelPhotos {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+
+    width: 1860px;
+    height: 301px;
+}
+
+#travelPhotosTriple {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+    gap: 30px;
+
+    width: 1920px;
+    height: 963px;
+}
+
+#travelStorys {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 100px;
+}
+
+#storyTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+
+    width: 615px;
+    height: 159px;
+}
+
+#storyH2 { 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 59px;
+    line-height: 124%;
+    text-align: center;
+    color: #1B1F2B;
+}
+
+#storyP {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    text-align: center;
+    color: #A6A6A6;
+
+    width: 418px;
+    height: 56px;
+}
+
+#travelStoryCards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 50px;
+
+    width: 1170px;
+    height: 1801px;
+}
+
+.storyCard {
+    width: 1170px;
+    height: 567px;
+
+    border-radius: 50px;
+
+    background: url();
+}
+
+.storyCardH3 {
+    width: 554px;
+    height: 43px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 122%;
+    color: #FFFFFF;
+}
+
+.topStoryCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px 0px 0px 60px;
+    gap: 37px;
+    height: 394px;
+}
+
+.storyCardP {
+    width: 554px;
+    height: 224px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    color: #FFFFFF;
+}
